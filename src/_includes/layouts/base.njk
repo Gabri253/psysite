@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | psysite</title>
+  <title>{{ title }} | psysite</title>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -15,10 +15,7 @@
   </header>
 
   <main>
-    <h1>psysite</h1>
-<p>Hi, psysite here! 👋</p>
-<p>Questo è un sito statico generato con <strong>Eleventy</strong> e <strong>Nunjucks</strong>.</p>
-
+    {{ content | safe }}
   </main>
 
   <footer>

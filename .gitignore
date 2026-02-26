@@ -1,3 +1,4 @@
+/* Escludo la cartella _site, che contiene il sito generato da 11ty ed è inutile e anche i moduli, che vengono caricati direttamente dal server grazie al file package-lock.json e package.json */ 
 node_modules/
 _site/
 .DS_Store

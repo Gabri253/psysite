@@ -3,23 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }} | psysite</title>
+  <meta name="description" content="Studio di Psicologia - Supporto e benessere mentale">
+  <title>{{ title }} | Dott.ssa Psicologa</title>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/README/">README</a>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1><a href="/">Dott.ssa Psicologa</a></h1>
+      </div>
+      <nav class="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/chi-sono/" class="nav-link">Chi sono</a>
+        <a href="/servizi/" class="nav-link">Servizi</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="/contatti/" class="nav-link">Contatti</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    {{ content | safe }}
+  <main class="main">
+    <div class="container">
+      {{ content | safe }}
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2026 - psysite</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Studio di Psicologia. Tutti i diritti riservati.</p>
+      <p class="privacy">
+        <a href="/privacy/">Privacy</a> | 
+        <a href="/cookie/">Cookie Policy</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>

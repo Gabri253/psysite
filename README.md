@@ -2,8 +2,6 @@
 
 **Per avviare il server:npx @11ty/eleventy --serve**
 
-Ciaooooo
-
 **package-lock.json** --> Contiene l'elenco di tutti i pacchetti e le esatte versioni, in modo che quando eseguo il sito sul server vengano utilizzate le stesse esatte versioni.
 
 **package.json** --> Contiene le informazioni generiche sul sito, gli script da eseguire allo start, build, etc e le dipendenze da pacchetti esterni per la costruzione del sito

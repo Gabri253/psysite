@@ -23,10 +23,23 @@ permalink: /
     </div>
     <div class="service-card">
       <h3>Valutazione Psicologica</h3>
-      <p>Teste e valutazioni per una migliore comprensione di sé.</p>
+      <p>Test e valutazioni per una migliore comprensione di sé.</p>
+    </div>
+        <div class="service-card">
+      <h3>Supporto Genitoriale</h3>
+      <p>Sostegno ai genitori.</p>
     </div>
   </div>
   <a href="/servizi/" class="btn btn-secondary">Scopri tutti i servizi</a>
+</section>
+
+<section class="social-proof">
+  <h1>Mi presento</h1>
+  <p>Sono un'amante degli animali e dei viaggi, nata e cresciuta nel mondo della natura e dello sport.
+Mi descriverei come una persona gioiosa, laboriosa e motivata.
+Credo profondamente nel potere delle relazioni umane e nella ricchezza della cultura.
+</p>
+  <a href="/chi-sono/" class="btn btn-primary">Scopri di più su di me</a>
 </section>
 
 <section class="cta">

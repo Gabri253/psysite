@@ -1,6 +1,5 @@
 ---
 title: "Chi sono"
-layout: "base.njk"
 permalink: /chi-sono/
 ---
 

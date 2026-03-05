@@ -13,7 +13,7 @@ permalink: /privacy/
 **Dott.ssa [Nome Cognome]**  
 Via [Nome Via], [Numero] - [CAP] [Città]  
 Email: [email protetta]@gmail.com  
-Telefono: +39 XXX XXX XXXX
+Telefono: {{ site.phone }}
 
 **Iscritto all'Albo degli Psicologi della Regione [Regione] - n. [numero]**
 

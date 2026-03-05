@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
+    "start": "concurrently \"npm run tailwind:watch\" \"eleventy --serve\"",
+    "build": "npm run tailwind:build && eleventy",
+    "tailwind:watch": "npx tailwindcss -i src/assets/css/style.css -o _site/assets/css/output.css --watch",
+    "tailwind:build": "npx tailwindcss -i src/assets/css/style.css -o _site/assets/css/output.css --minify",
     "serve": "eleventy --serve",
     "watch": "eleventy --watch",
     "debug": "DEBUG=Eleventy* eleventy"
@@ -16,5 +18,11 @@
   "type": "commonjs",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
   }
 }

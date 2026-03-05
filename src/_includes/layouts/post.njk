@@ -1,0 +1,9 @@
+---
+layout: "base.njk"
+---
+
+<article>
+  <h1 class="text-3xl font-semibold mb-4">{{ title }}</h1>
+  <p class="text-gray-500 text-sm mb-6">{{ author }} - {{ date }}</p>
+  <div class="prose prose-teal lg:prose-xl">{{ content | safe }}</div>
+</article>

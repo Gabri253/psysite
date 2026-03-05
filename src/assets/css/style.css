@@ -1,3 +1,8 @@
+/*! @tailwind css variables */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ===== RESET E VARIABILI ===== */
 * {
   margin: 0;

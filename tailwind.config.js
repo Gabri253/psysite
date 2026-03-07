@@ -19,7 +19,20 @@
 module.exports = {
   content: ["./src/**/*.{njk,md,html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        brand:{
+          forest:'#1E392A',
+          sage: '#5B7B5F',
+          beige: '#FDFCF5',
+          'beige-dark': '#F2F0E4'
+        }
+      },
+      fontFamily: {
+        serif: ['Lora', 'serif'],
+        sans: ['Inter', 'sans-serif']
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography') //Aggiungo typography

@@ -4,13 +4,13 @@ layout: "base.njk"
 permalink: /
 ---
 
-<section class="hero">
+<section class="w-full h-screen" id="hero">
   <h1>Benvenuto nel mio studio</h1>
   <p>Uno spazio sicuro per il tuo benessere mentale e emotivo</p>
-  <a href="/contatti/" class="btn btn-primary">Prenota una consulenza</a>
+  <a href="/contatti/" id="btn btn-primary" class="max-w-7xl">Prenota una consulenza</a>
 </section>
 
-<section class="services-preview">
+<section class="max-w-6xl" id="services-preview">
   <h2>I miei servizi</h2>
   <div class="services-grid">
     <div class="service-card">
@@ -33,7 +33,7 @@ permalink: /
   <a href="/servizi/" class="btn btn-secondary">Scopri tutti i servizi</a>
 </section>
 
-<section class="social-proof">
+<section class="max-w-3xl" id="social-proof">
   <h1>Mi presento</h1>
   <p>Sono un'amante degli animali e dei viaggi, nata e cresciuta nel mondo della natura e dello sport.
 Mi descriverei come una persona gioiosa, laboriosa e motivata.

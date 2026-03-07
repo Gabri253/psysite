@@ -4,12 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run tailwind:watch\" \"eleventy --serve\"",
-    "build": "npm run tailwind:build && eleventy",
-    "tailwind:watch": "npx tailwindcss -i src/assets/css/style.css -o _site/assets/css/output.css --watch",
-    "tailwind:build": "npx tailwindcss -i src/assets/css/style.css -o _site/assets/css/output.css --minify",
-    "serve": "eleventy --serve",
-    "watch": "eleventy --watch",
+    "start": "concurrently \"npm:tailwind:watch\" \"npm:eleventy:serve\"",
+    "eleventy:serve": "eleventy --serve",
+    "tailwind:watch": "npx tailwindcss -i ./src/assets/css/style.css -o ./_site/assets/css/output.css --watch",
+    "build": "npx tailwindcss -i ./src/assets/css/style.css -o ./_site/assets/css/output.css --minify && eleventy",
     "debug": "DEBUG=Eleventy* eleventy"
   },
   "keywords": [],
@@ -17,11 +15,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@portabletext/to-html": "^5.0.2",
+    "@sanity/client": "^7.16.0",
+    "@sanity/image-url": "^2.0.3",
+    "luxon": "^3.7.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.27",
+    "concurrently": "^9.2.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.19"
   }

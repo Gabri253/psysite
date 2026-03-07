@@ -1,3 +1,9 @@
+/* Pacchetto per convertire il JSON fornito da Sanity in HTML */
+const { toHTML } = require('@portabletext/to-html');
+
+/* Pacchetto per formattare le date in italiano */
+const { DateTime } = require("luxon");
+
 /* Capire se inserirlo o no, attualmente non necessario. */
 //const plugins = require("@11ty/eleventy-navigation");
 
@@ -10,7 +16,12 @@ module.exports = function(eleventyConfig) {
      La prima cartella credo sia per il CSS, mi sa che con tailwind non serve  */
   /* Commentato perché altrimenti va a sovrascrivere il file creato da Tailwind nella cartella _site/assets/css */
   //eleventyConfig.addPassthroughCopy("src/assets/");
-  eleventyConfig.addPassthroughCopy("src/robots.txt");
+
+  // Aggiunge un watch target per il file CSS generato da Tailwind
+  eleventyConfig.addWatchTarget("./_site/assets/css/output.css");
+
+  // Copia la cartella delle immagini nel sito finale
+  eleventyConfig.addPassthroughCopy("./src/assets/img");
 
   /* REGISTRA IL FILTRO DATA PER FORMATTARE LE DATE IN ITALIANO */
   eleventyConfig.addFilter("dateFilter", (dateObj) => {
@@ -19,6 +30,20 @@ module.exports = function(eleventyConfig) {
       month: 'long',
       year: 'numeric'
     }).format(dateObj);
+  });
+
+  /* Conversione del JSON restituio da  Sanity in HTML */
+  eleventyConfig.addFilter("toHtml", (value) => {
+    if (!value) return ""; // Evita errori se il campo è vuoto
+    return toHTML(value);
+  });
+
+  /* Filtro per formattare le date in italiano usando Luxon */
+  eleventyConfig.addFilter("formatDate", (dateObj) => {
+    // Trasforma la data di Sanity in un oggetto Luxon e poi in stringa leggibile
+    return DateTime.fromISO(dateObj)
+      .setLocale('it') // Imposta la lingua in italiano
+      .toLocaleString(DateTime.DATE_FULL); // Esempio: 12 ottobre 2023
   });
 
   // Imposta le cartelle di input/output

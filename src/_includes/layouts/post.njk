@@ -1,9 +1,21 @@
 ---
 layout: "base.njk"
 ---
-
+{#
 <article>
   <h1 class="text-3xl font-semibold mb-4">{{ title }}</h1>
   <p class="text-gray-500 text-sm mb-6">{{ author }} - {{ date }}</p>
   <div class="prose prose-teal lg:prose-xl">{{ content | safe }}</div>
+</article>
+#}
+<article class="prose mx-auto">
+  <h1>{{ title or post.title }}</h1>
+  
+  {% if post.body %}
+    {# Se esiste post.body, arriva da Sanity (Portable Text) #}
+    {{ post.body | toHtml | safe }}
+  {% else %}
+    {# Altrimenti è un post Markdown locale #}
+    {{ content | safe }}
+  {% endif %}
 </article>

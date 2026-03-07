@@ -7,7 +7,7 @@
   <title>{{ title }} | Dott.ssa Psicologa Sara Martini</title>
   <link rel="stylesheet" href="/assets/css/output.css">
 </head>
-<body>
+<body class= "bg-brand-beige">
   <header class="header">
     <div class="container">
       <div class="logo">
@@ -23,20 +23,17 @@
     </div>
   </header>
 
-  <header class="text-gray-600 body-font bg-green-500">
+  <header class= "bg-brand-beige">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl"><h1><a href="/">Dott.ssa Psicologa Sara Martini</a></h1></span>
+    <a href="/" class="flex items-center">
+        <img src="/assets/img/logoSaraMartini1.webp" alt="Logo Dott.ssa Sara Martini" class="h-36 w-auto object-contain sepia-0">
     </a>
-    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-      <a href="/"class="mr-5 hover:text-gray-900">Home</a>
-      <a href="/chi-sono/"class="mr-5 hover:text-gray-900">Chi sono</a>
-      <a href="/servizi/" class="mr-5 hover:text-gray-900">Servizi</a>
-      <a href="/blog/" class="mr-5 hover:text-gray-900">Blog</a>
-      <a href="/contatti/" class="mr-5 hover:text-gray-900">Contatti</a>
+    <nav class="md:mr-auto md:ml-8 md:py-4 md:pl-8 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center text-brand-sage font-serif gap-5">
+      <a href="/"class="mr-5 hover:text-brand-forest font-semibold text-2xl">Home</a>
+      <a href="/chi-sono/"class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Chi sono</a>
+      <a href="/servizi/" class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Servizi</a>
+      <a href="/blog/" class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Blog</a>
+      <a href="/contatti/" class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Contatti</a>
            </nav>
     <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -46,7 +43,7 @@
   </div>
 </header>
 
-  <main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 p-6">
+  <main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 p-6 font-sans text-gray bg-brand-beige">
     <div class="lg:col-span-3">
       {{ content | safe }}
     </div>

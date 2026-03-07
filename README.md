@@ -2,11 +2,13 @@
 
 **Installazione su un altro PC:** Scaricare node.js dal sito ed installarlo. Riavviare il PC e avviare il server 11ty.
 
+*Per avviare tutto, sia Tailwind che 11ty ho configurato il comando npm start*
+
 **Per avviare il server: npx @11ty/eleventy --serve**
 
 **Per avviare il sanity studio: andare nella cartella studio e digitare npm run dev**
 
-**Per ribuildare il progetto (sia 11ty che tailwind): npm run build**
+**Per ribuildare il progetto (sia 11ty che tailwind): npm run build (PROBLEMA PER IL CSS CHE I CAMBIAMENTI NON VENGONO MOSTRATI SE NON SI RIBUILDA ALCUNE VOLTE)**
 
 **package-lock.json** --> Contiene l'elenco di tutti i pacchetti e le esatte versioni, in modo che quando eseguo il sito sul server vengano utilizzate le stesse esatte versioni.
 
@@ -20,10 +22,14 @@ Definisco un file base, nel mio caso base.njk, che definisce la struttura del si
 
 ## TODO
  - Inserire supporto immagini per fare sezioni con immagini (https://www.ilariabellavia.it/)
- - Inserire Sanity/Decap CMS e settarlo
- - Inserire supporto Tailwind
+ - Inserire Sanity/Decap CMS e settarlo ✅
+ - Inserire supporto Tailwind ✅
  - Definire meglio la struttura del sito
  - Inserire Google Maps nella pagina dove ci sono gli indirizzi, eventualmente riferimento alle recensioni Google (?)
+ - Icone SVG --> lucide.dev o Heroicons
+ - @sanity/image-url ✅
+ - @portabletext/to-html ✅
+ - Aggiungere WebHook per Netlify, una volta caricato
 
 
 I **Global Data Files** definiscono delle regole che sono valide per tutto il progetto. Nel mio caso è il file **site.json**, in cui ho definito delle variabili globali attualmente.
@@ -38,3 +44,13 @@ Definire all'interno di posts.json `"permalink" : "/blog/{{ title | slugify }}/`
 
 
 **post.data.description or post.templateContent | truncate(150) | safe** --> Posso usare come anteprima una parte troncata del testo, oppure scrivere una descrizione apposita nei metadati.
+
+## Sanity
+Query da fare su sanity:
+    *[_type == "post"]{
+        title,
+        "slug": slug.current,
+        publishedAt,
+        body,
+        "mainImage": mainImage.asset->url
+    }

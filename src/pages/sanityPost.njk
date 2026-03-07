@@ -1,0 +1,10 @@
+---
+pagination:
+  data: sanityPosts    # Il nome del file in _data/posts.js
+  size: 1              # Crea una pagina per ogni singolo post
+  alias: post          # Nome variabile da usare sotto
+permalink: "/blog/{{ post.slug }}/"
+layout: post.njk
+---
+{# Questo file può rimanere vuoto se il layout gestisce tutto. Conviene che sia così per mantenerre le funzioni separate: questo file contiene le istruzioni per creare una pagina a partire
+dai dati restituiti da Sanity; post.njk, invece, contiiene il layout della pagina, in cui vengono inseriti i dati #}

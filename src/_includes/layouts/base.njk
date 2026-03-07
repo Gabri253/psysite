@@ -6,6 +6,7 @@
   <meta name="description" content="Studio di Psicologia - Supporto e benessere mentale">
   <title>{{ title }} | Dott.ssa Psicologa Sara Martini</title>
   <link rel="stylesheet" href="/assets/css/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 <body class= "bg-brand-beige">
   <header class="header">
@@ -29,7 +30,7 @@
         <img src="/assets/img/logoSaraMartini1.webp" alt="Logo Dott.ssa Sara Martini" class="h-36 w-auto object-contain sepia-0">
     </a>
     <nav class="md:mr-auto md:ml-8 md:py-4 md:pl-8 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center text-brand-sage font-serif gap-5">
-      <a href="/"class="mr-5 hover:text-brand-forest font-semibold text-2xl">Home</a>
+      <a href="/"class="mr-5 hover:text-brand-forest font-semibold md:text-2xl">Home</a>
       <a href="/chi-sono/"class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Chi sono</a>
       <a href="/servizi/" class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Servizi</a>
       <a href="/blog/" class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Blog</a>
@@ -61,5 +62,35 @@
       </p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'fade', // Rende la transizione molto elegante
+    fadeEffect: {
+      crossFade: true
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  </script>
 </body>
 </html>

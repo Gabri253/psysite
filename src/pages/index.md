@@ -4,25 +4,25 @@ layout: "base.njk"
 permalink: /
 ---
 
-<section class="w-full h-screen" id="hero">
+<section id="hero">
   <h1>Benvenuto nel mio studio</h1>
   <p>Uno spazio sicuro per il tuo benessere mentale e emotivo</p>
   <a href="/contatti/" id="btn btn-primary" class="max-w-7xl">Prenota una consulenza</a>
-  <div class="swiper myHeroSlider h-[500px] md:h-[600px] w-full">
+  <div class="swiper myHeroSlider h-[600px] md:h-[700px] w-full overflow-hidden relative px-4">
     <div class="swiper-wrapper">
     
-      <div class="swiper-slide relative flex items-center justify-center bg-brand-forest">
-        <img src="/assets/img/studio-pomeriggio.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60" alt="">
-        <div class="relative z-10 text-center text-white px-4">
+      <div class="swiper-slide relative flex mx-auto bg-brand-beige">
+        <img src="/assets/img/studio-template.webp" class="absolute inset-0 w-full h-full object-cover opacity-90" alt="">
+        <div class="relative z-10 text-center text-black px-4 pt-8">
           <h2 class="text-4xl md:text-6xl font-bold mb-4">Benvenuti nel mio studio</h2>
           <p class="text-lg md:text-xl mb-8">Uno spazio sicuro per il tuo benessere psicologico.</p>
           <a href="/chi-sono/" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition">Scopri di più</a>
         </div>
       </div>
 
-      <div class="swiper-slide relative flex items-center justify-center bg-brand-sage">
-        <img src="/assets/img/supporto-genitoriale.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50" alt="">
-        <div class="relative z-10 text-center text-white px-4">
+      <div class="swiper-slide relative flex items-center justify-center bg-brand-beige">
+        <img src="/assets/img/supporto-genitoriale.jpg" class="absolute inset-0 w-full h-full object-cover opacity-90" alt="">
+        <div class="relative z-10 text-center text-white px-4 pt-8">
           <h2 class="text-4xl md:text-6xl font-bold mb-4 text-brand-beige">Sostegno alla genitorialità</h2>
           <p class="text-lg md:text-xl mb-8 text-brand-beige">Ritrovare l'equilibrio e la comunicazione.</p>
           <a href="/servizi/" class="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold transition">I miei servizi</a>
@@ -37,8 +37,98 @@ permalink: /
 </div>
 </section>
 
-<section class="max-w-6xl" id="services-preview">
-  <h2>I miei servizi</h2>
+<section class="w-full pt-20" id="services-preview">
+  <h2 class="text-4xl md:text-6xl font-bold mb-4 mx-auto text-center text-brand-forest pb-10">I miei servizi</h2>
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+          <div class="p-6">
+            <h1 class="title-font font-semibold text-center text-lg text-brand-forest mb-3">Psicoterapia Individuale</h1>
+            <p class="text-center leading-relaxed mb-3">Percorsi personalizzati per affrontare difficoltà emotive e psicologiche.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Scopri di più
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog">
+          <div class="p-6">
+            <h1 class="title-font font-semibold text-center text-lg text-brand-forest mb-3">Valutazione Psicologica</h1>
+            <p class="text-center leading-relaxed mb-3">Test e valutazioni per una migliore comprensione di sé.</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Scopri di più
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
+          <div class="p-6">
+            <h1 class="title-font font-semibold text-center text-lg text-brand-forest mb-3">Supporto Genitoriale</h1>
+            <p class="text-center leading-relaxed mb-3">Sostegno ai genitori.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Scopri di più
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <div class="services-grid">
     <div class="service-card">
       <h3>Psicoterapia Individuale</h3>

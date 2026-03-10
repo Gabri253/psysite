@@ -25,7 +25,8 @@ module.exports = {
           forest:'#1E392A',
           sage: '#5B7B5F',
           beige: '#FDFCF5',
-          'beige-dark': '#F2F0E4'
+          'beige-dark': '#F2F0E4',
+          'light-beige': '#FFFEFA'
         }
       },
       fontFamily: {

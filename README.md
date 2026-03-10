@@ -1,4 +1,4 @@
-﻿# Heading
+﻿# README
 
 **Installazione su un altro PC:** Scaricare node.js dal sito ed installarlo. Riavviare il PC e avviare il server 11ty.
 

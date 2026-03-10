@@ -4,12 +4,13 @@
 @tailwind utilities;
 
 /* ===== RESET E VARIABILI ===== */
+/*
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+*/
 :root {
   --primary-color: #6366f1;
   --secondary-color: #8b5cf6;
@@ -33,14 +34,14 @@ body {
 }
 
 /* ===== CONTAINER ===== */
-.container {
+/*.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
-
+*/
 /* ===== TIPOGRAFIA ===== */
-h1, h2, h3, h4 {
+/*h1, h2, h3, h4 {
   margin: 1.5rem 0 1rem;
   color: var(--text-color);
   font-weight: 700;
@@ -50,14 +51,14 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.5rem;
 }
-/*
+
 h2 {
   font-size: 2rem;
   border-bottom: 3px solid var(--primary-color);
   padding-bottom: 0.5rem;
   width: fit-content;
 }
-*/
+
 h3 {
   font-size: 1.5rem;
 }
@@ -65,18 +66,18 @@ h3 {
 p {
   margin: 1rem 0;
   color: var(--text-light);
-}
+}*/
 /*
 a {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
-*/
+
 a:hover {
   color: var(--secondary-color);
 }
-
+*/
 /* ===== HEADER ===== */
 .header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

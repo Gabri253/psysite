@@ -29,7 +29,14 @@ Definisco un file base, nel mio caso base.njk, che definisce la struttura del si
  - Icone SVG --> lucide.dev o Heroicons
  - @sanity/image-url ✅
  - @portabletext/to-html ✅
- - Aggiungere WebHook per Netlify, una volta caricato
+ - Aggiungere WebHook per Netlify, una volta caricato ✅
+ - Alt in immagini provenienti da sanity
+ - Configurare Sanity Studio da remoto
+ - Aggiungere categorie ai post e consigliare articoli della stessa categoria sulla colonna dx
+ - Fare colonna dx con articoli suggeriti
+ - Homepage con articoli recenti
+ - Far funzionare il reveal per mostrare una section in maniera dinamica
+ - Aggiungere eventualmente gradiente di colore nella transizione da una sezione all'altra
 
 
 I **Global Data Files** definiscono delle regole che sono valide per tutto il progetto. Nel mio caso è il file **site.json**, in cui ho definito delle variabili globali attualmente.

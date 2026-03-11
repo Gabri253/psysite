@@ -44,44 +44,11 @@
       </button>
     </div>
   </header>
-  <section class="py-16 px-6 max-w-6xl mx-auto">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    
-    <div class="overflow-hidden rounded-2xl shadow-xl bg-red-200">
-      <img 
-        src="/assets/img/dottoressa-studio.jpg" 
-        alt="Dottoressa Sara Martini sorridente nel suo studio a Lucca" 
-        class="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-700 hover:scale-105"
-      >
-    </div>
 
-    <div class="space-y-6 bg-blue-200" style="transition-delay: 200ms;">
-      <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-forest">
-        Mi presento, sono Sara
-      </h2>
-      
-      <p class="text-lg text-brand-forest leading-relaxed">
-        Sono un'amante degli animali e dei viaggi, nata e cresciuta nel mondo della natura e dello sport.
-        Mi descriverei come una persona gioiosa, laboriosa e motivata.
-        Credo profondamente nel potere delle relazioni umane e nella ricchezza della cultura.Il mio approccio si basa sull'ascolto empatico e sulla creazione di uno spazio sicuro dove esplorare le proprie difficoltà. Insieme, lavoreremo per ritrovare il tuo equilibrio psicologico.
-      </p>
-
-      <p class="text-lg text-brand-forest leading-relaxed">
-        Specializzata in psicoterapia cognitiva, aiuto adulti e adolescenti a gestire ansia, stress e momenti di crisi personale.
-      </p>
-
-      <div class="pt-4">
-        <a href="/chi-sono/" class="inline-block border-2 border-brand-forest text-brand-forest hover:bg-brand-forest hover:text-white px-8 py-3 rounded-full font-semibold transition-all">
-          Scopri di più su di me
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
   <main class="block w-full font-sans bg-brand-beige">
     {{ content | safe}}  
   </main>
+  
   <footer class="footer">
     <div class="container">
       <p>&copy; 2026 Studio di Psicologia. Tutti i diritti riservati.</p>
@@ -90,38 +57,50 @@
         <a href="/cookie/">Cookie Policy</a>
       </p>
     </div>
+
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    parallax: true, // Questo attiva i calcoli del modulo
-    speed: 1200,    // Velocità lenta per godersi il movimento
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+      // Optional parameters
+      parallax: true, // Questo attiva i calcoli del modulo
+      speed: 1200,    // Velocità lenta per godersi il movimento
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    effect: 'fade', // Rende la transizione molto elegante
-    fadeEffect: {
-      crossFade: true
-    },
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      effect: 'fade', // Rende la transizione molto elegante
+      fadeEffect: {
+        crossFade: true
+      },
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 }); // Si attiva quando il 10% dell'elemento è visibile
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>

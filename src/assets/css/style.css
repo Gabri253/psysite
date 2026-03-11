@@ -3,6 +3,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Stato iniziale: l'elemento è leggermente più in basso e trasparente */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+/* Stato finale: quando appare, torna in posizione e diventa visibile */
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/** Riduci o disabilita le animazioni per utenti che preferiscono ridurre il movimento */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* ===== RESET E VARIABILI ===== */
 /*
 * {

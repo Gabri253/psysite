@@ -1,4 +1,18 @@
 ---
+slides:
+- imgUrl: "/assets/img/studio-template.webp"
+  imgAlt: "Studio della dottoressa Sara Martini a Lucca"
+  titolo: "Benvenuti nel mio studio"
+  messaggio: "Uno spazio sicuro per il tuo benessere psicologico."
+  buttonLink: "/chi-sono/"
+  buttonText: "Scopri di più"
+- imgUrl: "/assets/img/supporto-genitoriale.jpg"
+  imgAlt: "Mani di bambini ed adulti una sopra l'altra"
+  titolo: "Sostegno alla genitorialità"
+  messaggio: "Ritrovare l'equilibrio e la comunicazione."
+  buttonLink: "/servizi/"
+  buttonText: "I miei servizi"
+
 title: "Home"
 layout: "base.njk"
 permalink: /
@@ -35,9 +49,9 @@ permalink: /
 </div>
 </section>
 
-<section class="w-full pt-20" id="services-preview">
-  <h2 class="text-4xl md:text-6xl font-bold mb-4 mx-auto text-center text-brand-forest">I miei servizi</h2>
-  <section class="text-gray-600 body-font">
+<section class="max-w-6xl pt-20 mx-auto" id="services-preview">
+  <h2 class="text-4xl md:text-5xl font-serif font-bold text-brand-forest mx-auto text-center">I miei servizi</h2>
+  <div class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/3">
@@ -102,8 +116,8 @@ permalink: /
       </div>
     </div>
   </div>
-<!--
-</section>
+
+</div><!--
   <div class="services-grid">
     <div class="service-card">
       <h3>Psicoterapia Individuale</h3>
@@ -122,10 +136,10 @@ permalink: /
       <p>Sostegno ai genitori.</p>
     </div>
   </div>
-  <a href="/servizi/" class="btn btn-secondary">Scopri tutti i servizi</a>
+  <a href="/servizi/" class="btn btn-secondary">Scopri tutti i servizi</a>-->
 </section>
--->
-<section class="py-16 px-6 max-w-4xl mx-auto">
+
+<section class="py-12 px-6 max-w-4xl mx-auto">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">   
     <div class="overflow-hidden rounded-2xl shadow-xl">
       <img 
@@ -141,7 +155,7 @@ permalink: /
       <p class="text-lg text-brand-forest leading-relaxed">
         Sono un'amante degli animali e dei viaggi, nata e cresciuta nel mondo della natura e dello sport.
         Mi descriverei come una persona gioiosa, laboriosa e motivata.
-        Credo profondamente nel potere delle relazioni umane e nella ricchezza della cultura.Il mio approccio si basa sull'ascolto empatico e sulla creazione di uno spazio sicuro dove esplorare le proprie difficoltà. Insieme, lavoreremo per ritrovare il tuo equilibrio psicologico.
+        Credo profondamente nel potere delle relazioni umane e nella ricchezza della cultura. Il mio approccio si basa sull'ascolto empatico e sulla creazione di uno spazio sicuro dove esplorare le proprie difficoltà. Insieme, lavoreremo per ritrovare il tuo equilibrio psicologico.
       </p>
       <p class="text-lg text-brand-forest leading-relaxed">
         Specializzata in psicoterapia cognitiva, aiuto adulti e adolescenti a gestire ansia, stress e momenti di crisi personale.
@@ -154,44 +168,42 @@ permalink: /
     </div>
   </div>
 </section>
-<section class="py-16 px-6 max-w-7xl mx-auto">
+<section class="py-12 px-6 max-w-6xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-serif font-bold mb-10 text-brand-forest">Ultime riflessioni</h2>
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10"> 
-    <div class="lg:col-span-2 group">
-      <div class="overflow-hidden rounded-3xl">
-        <img src="/img/blog-1.jpg" class="w-full h-96 object-cover group-hover:scale-105 transition-transform" />
-      </div>
-      <h3 class="text-2xl font-bold mt-4">Il titolo dell'articolo più importante</h3>
-      <p class="mt-2 text-gray-600">Un breve estratto che incuriosisce il lettore...</p>
-    </div>
-    <div class="flex flex-col gap-8">
-      <article class="relative overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg h-250">
-        <img alt="" src="https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&amp;fit=crop&amp;q=80&amp;w=1160" class="absolute inset-0 h-full w-full object-cover">
-        <div class="relative bg-linear-to-t from-gray-900/50 to-gray-900/25 sm:pt-48 lg:pt-64">
-          <div class="p-4 sm:p-6">
-            <time datetime="2022-10-10" class="block text-xs text-white/90"> 10th Oct 2022 </time>
-            <a href="#">
-              <h3 class="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-            </a>
-            <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-              pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-              quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-              atque dignissimos. Molestias explicabo corporis voluptatem?
-            </p>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">   
+      <div class="lg:col-span-2 flex flex-col">
+        <article class="group">
+          <div class="overflow-hidden rounded-2xl mb-4">
+            <img src="/img/post-1.jpg" alt="" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105">
           </div>
-        </div>
-      </article>
-      <div class="border-b pb-4">
-        <span class="text-xs uppercase text-brand-sage font-bold">Benessere</span>
-        <h4 class="font-bold hover:text-brand-sage cursor-pointer">Un altro tema interessante trattato qui</h4>
+          <div>
+            <span class="text-xs font-bold text-brand-sage uppercase">Articolo in evidenza</span>
+            <h3 class="text-2xl font-bold mt-2 group-hover:underline">Il titolo del tuo articolo principale</h3>
+            <p class="text-gray-600 mt-3">Un estratto più lungo che spiega di cosa parli in questo post, invitando alla lettura profonda...</p>
+          </div>
+        </article>
       </div>
-      <a href="/blog/" class="font-bold underline decoration-brand-sage">Vai a tutto il blog →</a>
+      <div class="flex flex-col gap-8">     
+        <article class="flex gap-4 items-start group">
+          <img src="/img/post-2.jpg" class="w-24 h-24 rounded-xl object-cover shrink-0">
+          <div>
+            <h4 class="font-bold leading-tight group-hover:text-brand-sage">Titolo breve del secondo articolo</h4>
+            <p class="text-sm text-gray-500 line-clamp-2 mt-1">Breve accenno al tema trattato.</p>
+          </div>
+        </article>
+        <article class="flex gap-4 items-start group">
+          <img src="/img/post-3.jpg" class="w-24 h-24 rounded-xl object-cover shrink-0">
+          <div>
+            <h4 class="font-bold leading-tight group-hover:text-brand-sage">Titolo breve del terzo articolo</h4>
+            <p class="text-sm text-gray-500 line-clamp-2 mt-1">Breve accenno al tema trattato.</p>
+          </div>
+        </article>
+        <a href="/blog/" class="mt-4 text-sm font-bold border-b border-brand-sage pb-1 self-start hover:text-brand-sage">Esplora tutto il blog →</a>
+      </div>
     </div>
-  </div>
-</section>
-<section class="max-w-3xl" id="social-proof">
-  <h1>Mi presento</h1>
+  </section>
+<section class="max-w-3xl mx-auto" id="social-proof">
+  <h2 class="text-3xl md:text-4xl font-serif font-bold mb-10 text-brand-forest">Mi presento</h1>
   <p>Sono un'amante degli animali e dei viaggi, nata e cresciuta nel mondo della natura e dello sport.
 Mi descriverei come una persona gioiosa, laboriosa e motivata.
 Credo profondamente nel potere delle relazioni umane e nella ricchezza della cultura.
@@ -199,7 +211,7 @@ Credo profondamente nel potere delle relazioni umane e nella ricchezza della cul
   <a href="/chi-sono/" class="btn btn-primary">Scopri di più su di me</a>
 </section>
 
-<section class="cta">
+<section class="max-w-3xl mx-auto" id="cta">
   <h2>Come posso aiutarti?</h2>
   <p>Se senti il bisogno di supporto, sono qui per te.</p>
   <a href="/chi-sono/" class="btn btn-primary">Scopri di più su di me</a>

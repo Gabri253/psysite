@@ -10,27 +10,36 @@
 </head>
 <body class= "bg-brand-beige">
   <!--
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <h1><a href="/">Dott.ssa Psicologa Sara Martini</a></h1>
-      </div>
-      <nav class="nav">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/chi-sono/" class="nav-link">Chi sono</a>
-        <a href="/servizi/" class="nav-link">Servizi</a>
-        <a href="/blog/" class="nav-link">Blog</a>
-        <a href="/contatti/" class="nav-link">Contatti</a>
-      </nav>
-    </div>
-  </header>
-  -->
+  <header class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    
+    <a href="/" class="flex items-center gap-2 group">
+      <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-white font-serif text-xl group-hover:rotate-12 transition-transform">
+        D </div>
+      <span class="font-serif text-xl tracking-tight text-brand-forest">Dott.ssa Nome Cognome</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="/chi-sono" class="text-sm font-medium text-gray-600 hover:text-brand-sage transition-colors">Chi Sono</a>
+      <a href="/servizi" class="text-sm font-medium text-gray-600 hover:text-brand-sage transition-colors">Servizi</a>
+      <a href="/blog" class="text-sm font-medium text-gray-600 hover:text-brand-sage transition-colors">Riflessioni</a>
+      
+      <a href="/contatti" class="ml-4 px-5 py-2.5 bg-brand-forest text-white text-sm font-bold rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all">
+        Prenota un Colloquio
+      </a>
+    </nav>
+
+    <button class="md:hidden text-brand-forest">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+  </div>
+</header>-->
   <header class= "bg-brand-beige">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a href="/" class="flex items-center">
           <img src="/assets/img/logoSaraMartini1.webp" alt="Logo Dott.ssa Sara Martini" class="h-36 w-auto object-contain sepia-0">
       </a>
-      <nav class="md:mr-auto md:ml-8 md:py-4 md:pl-8 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center text-brand-sage font-serif gap-5">
+      <nav class="md:mr-auto md:ml-8 md:py-4 md:pl-8 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center text-brand-sage font-serif gap-5 font-serif">
         <a href="/"class="mr-5 hover:text-brand-forest font-semibold md:text-2xl">Home</a>
         <a href="/chi-sono/"class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Chi sono</a>
         <a href="/servizi/" class="mr-5 hover:text-brand-forest font-semibold text-lg md:text-2xl">Servizi</a>
@@ -46,7 +55,10 @@
   </header>
 
   <main class="block w-full font-sans bg-brand-beige">
-    {{ content | safe}}  
+    <!-- {% include "layouts/heroSwiper.njk" %}  -->
+    <a href="https://wa.me/{{ site.phone }}" class="fixed bottom-6 right-6 bg-[#25D366] p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-50"></a>
+    {{ content | safe}}
+    <!-- {% include "layouts/heroSwiper.njk" %}  -->
   </main>
   
   <footer class="footer">

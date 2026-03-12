@@ -1,0 +1,12 @@
+<section id="hero">
+  <div class="swiper myHeroSlider h-[600px] md:h-[700px] w-full overflow-hidden relative px-4" parallax="true">
+    <div class="swiper-wrapper">
+      {% for slide in slides %}
+      {% include "layouts/swiper-slide.njk" %}
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev !text-white"></div>
+    <div class="swiper-button-next !text-white"></div>
+  </div>
+</section>

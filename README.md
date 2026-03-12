@@ -38,6 +38,17 @@ Definisco un file base, nel mio caso base.njk, che definisce la struttura del si
  - Far funzionare il reveal per mostrare una section in maniera dinamica
  - Aggiungere eventualmente gradiente di colore nella transizione da una sezione all'altra
 
+## Struttura Homepage
+
+- Slider (Impatto emotivo)
+- Servizi (Cosa fai per me)
+- Metodo/Come funziona (Trasparenza e sicurezza)
+- Bio (Chi sei tu - Empatia)
+- CTA Banner (L'invito all'azione)
+- Blog (La tua autorevolezza/pensiero)
+- FAQ (Ultimi dubbi risolti)
+- Footer (Contatti e mappa)
+
 
 I **Global Data Files** definiscono delle regole che sono valide per tutto il progetto. Nel mio caso è il file **site.json**, in cui ho definito delle variabili globali attualmente.
 I **Directory Data Files** invece definiscono una serie di regole che sono valide solamente all'interno della cartella in cui è contenuto. Nel mio caso ho definito il file **posts.json**

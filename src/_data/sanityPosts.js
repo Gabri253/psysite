@@ -1,7 +1,7 @@
 /* File in cui ad ogni build 11ty interroga Sanity per ottenere i post */
 const {createClient} = require('@sanity/client');
 
-// helper for the Sanity client used by Eleventy data files
+/* Helper for the Sanity client used by Eleventy data files */
 const client = createClient({
     projectId: 'mhr6l1q3',
     /*
@@ -19,8 +19,12 @@ module.exports = async function() {
             title,
             "slug": slug.current,
             publishedAt,
+            "image": image {
+                asset,
+                alt
+            },
             body,
-            "mainImage": mainImage.asset->url
+            excerpt
         } | order(publishedAt desc)`
     );
     console.log("Post trovati da Sanity:", posts.map(p => p.slug));

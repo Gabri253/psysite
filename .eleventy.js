@@ -1,8 +1,24 @@
+/* Eleventy configuration file - Ad ogni modifica è necessario riavviare il server 11 */
+
+/* File in cui ad ogni build 11ty interroga Sanity per ottenere i post */
+const {createClient} = require('@sanity/client');
+
+/* Importa il client di Sanity per interagire con l'API */
+const client = createClient({
+    projectId: 'mhr6l1q3',
+    dataset: 'production',
+    useCdn: false,
+    apiVersion: '2026-03-03',
+});
+
 /* Pacchetto per convertire il JSON fornito da Sanity in HTML */
 const { toHTML } = require('@portabletext/to-html');
 
 /* Pacchetto per formattare le date in italiano */
 const { DateTime } = require("luxon");
+
+const { createImageUrlBuilder } = require('@sanity/image-url');
+const builder = createImageUrlBuilder(client);
 
 /* Capire se inserirlo o no, attualmente non necessario. */
 //const plugins = require("@11ty/eleventy-navigation");
@@ -32,11 +48,13 @@ module.exports = function(eleventyConfig) {
     }).format(dateObj);
   });
 
+
   /* Conversione del JSON restituio da  Sanity in HTML */
   eleventyConfig.addFilter("toHtml", (value) => {
     if (!value) return ""; // Evita errori se il campo è vuoto
     return toHTML(value);
   });
+
 
   /* Filtro per formattare le date in italiano usando Luxon */
   eleventyConfig.addFilter("formatDate", (dateObj) => {
@@ -45,6 +63,26 @@ module.exports = function(eleventyConfig) {
       .setLocale('it') // Imposta la lingua in italiano
       .toLocaleString(DateTime.DATE_FULL); // Esempio: 12 ottobre 2023
   });
+
+
+  /* Filtro per generare URL delle immagini da Sanity */
+  eleventyConfig.addFilter("urlFor", function(source) {
+    return builder.image(source);
+  });
+
+
+  /* Filtro per generare URL delle immagini da Sanity con opzioni di dimensione e qualità */
+  eleventyConfig.addFilter("formatSanity", function(source, width, quality = 80) {
+   return builder.image(source).width(width).quality(quality).auto('format').url();
+  });
+  
+
+  /* Filtro per limitare il numero di elementi in un array */
+  eleventyConfig.addFilter("limit", function(array, limit) {
+    if (!Array.isArray(array)) return [];
+    return array.slice(0, limit);
+  });
+
 
   // Imposta le cartelle di input/output
   return {

@@ -168,7 +168,7 @@ permalink: /
     </div>
   </div>
 </section>
-<section id="homeBlog" class="py-12 px-6 max-w-6xl mx-auto">
+<section class="py-12 px-6 max-w-6xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-serif font-bold mb-10 text-brand-forest">Ultime riflessioni</h2>
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">   
       <div class="lg:col-span-2 flex flex-col">

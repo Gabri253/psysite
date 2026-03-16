@@ -1,0 +1,37 @@
+---
+title: "Home"
+layout: "base.njk"
+permalink: /
+
+slides:
+- imgUrl: "/assets/img/studio-template.webp"
+  imgAlt: "Studio della dottoressa Sara Martini a Lucca"
+  titolo: "Benvenuti nel mio studio"
+  messaggio: "Uno spazio sicuro per il tuo benessere psicologico."
+  buttonLink: "/chi-sono/"
+  buttonText: "Scopri di più"
+- imgUrl: "/assets/img/supporto-genitoriale.webp"
+  imgAlt: "Mani di bambini ed adulti una sopra l'altra"
+  titolo: "Sostegno alla genitorialità"
+  messaggio: "Ritrovare l'equilibrio e la comunicazione."
+  buttonLink: "/servizi/"
+  buttonText: "I miei servizi"
+
+cards:
+- titolo: "Psicoterapia Individuale"
+  descrizione: "Percorsi personalizzati per affrontare difficoltà emotive e psicologiche."
+  imgUrl: "https://dummyimage.com/720x400"
+  imgAlt: ""
+- titolo: "Valutazione Psicologica"
+  descrizione: "Test e valutazioni per una migliore comprensione di sé."
+  imgUrl: "https://dummyimage.com/721x401"
+  imgAlt: ""
+- titolo: "Supporto Genitoriale"
+  descrizione: "Sostegno ai genitori."
+  imgUrl: "https://dummyimage.com/721x402"
+  imgAlt: ""
+---
+    {% include "layouts/heroSwiper.njk" %}
+    {% include "layouts/components/servicesPreview.njk" %}
+    {% include "layouts/components/homeBio.njk" %}
+    {% include "layouts/components/homeBlog.njk" %}

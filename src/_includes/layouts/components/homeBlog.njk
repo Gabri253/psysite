@@ -10,7 +10,7 @@
                      {% if post.image and post.image.asset %}
                         <img src="{{ post.image |formatSanity(1200,80) }}" alt="post.image.alt" loading="lazy" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105">
                      {% else %}
-                        <img src="/assets/img/logoSaraMartini.webp" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="/assets/img/template-articolo.webp" alt="Donna che legge un libro" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                      {% endif %}
                      </a>
                   </div>
@@ -28,7 +28,7 @@
                   {% if post.image and post.image.asset %}
                      <img src="{{ post.image |formatSanity(1200,80) }}" alt="post.image.alt" loading="lazy" class="w-24 h-24 rounded-xl object-cover shrink-0">
                   {% else %}
-                     <img src="/assets/img/logoSaraMartini.webp" class="w-24 h-24 rounded-xl object-cover shrink-0">
+                     <img src="/assets/img/template-articolo.webp" alt="Donna che legge un libro" loading="lazy" class="w-24 h-24 rounded-xl object-cover shrink-0">
                   {% endif %}
                   </a>
                   <div>

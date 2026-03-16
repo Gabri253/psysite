@@ -15,7 +15,7 @@ slides:
 
 title: "Home"
 layout: "base.njk"
-permalink: /
+permalink: /indexOld/
 ---
 
 <section id="hero">

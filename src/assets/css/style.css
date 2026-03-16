@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Nasconde gli elementi con x-cloak finché Alpine.js non li mostra */ 
+[x-cloak] { display: none !important; }
+
 /* Stato iniziale: l'elemento è leggermente più in basso e trasparente */
 .reveal {
   opacity: 0;

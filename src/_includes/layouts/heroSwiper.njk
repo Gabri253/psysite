@@ -1,12 +1,12 @@
-<section id="hero">
-  <div class="swiper myHeroSlider h-[600px] md:h-[700px] w-full overflow-hidden relative px-4" parallax="true">
+<section id="hero" class="w-full">
+  <div class="swiper myHeroSlider w-full aspect-[4/5] sm:aspect-[16/10] md:aspect-[21/9] xl:aspect-[3/1] overflow-hidden relative" parallax="true">
     <div class="swiper-wrapper">
       {% for slide in slides %}
-      {% include "layouts/swiper-slide.njk" %}
+        {% include "layouts/swiper-slide.njk" %}
       {% endfor %}
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev !text-white"></div>
-    <div class="swiper-button-next !text-white"></div>
+    <div class="swiper-button-prev !text-white after:!text-2xl"></div>
+    <div class="swiper-button-next !text-white after:!text-2xl"></div>
   </div>
 </section>

@@ -26,7 +26,8 @@ module.exports = {
           sage: '#5B7B5F',
           beige: '#FDFCF5',
           'beige-dark': '#F2F0E4',
-          'light-beige': '#FFFEFA'
+          'light-beige': '#FFFEFA',
+          lino: '#FDFCF5'
         }
       },
       fontFamily: {

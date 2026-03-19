@@ -33,7 +33,42 @@ module.exports = {
       fontFamily: {
         serif: ['Lora', 'serif'],
         sans: ['Inter', 'sans-serif']
-      }
+      },
+
+      fontSize: {
+        // H1 · Hero — 48px → 56px → 64px
+        'display':    ['3rem',   { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'display-md': ['3.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'display-lg': ['4rem',   { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+ 
+        // H2 · Titoli sezione — 28px → 32px → 40px
+        'heading-1':    ['1.75rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        'heading-1-md': ['2rem',    { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        'heading-1-lg': ['2.5rem',  { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+ 
+        // H3 · Titoli card — 20px → 22px → 24px
+        'heading-2':    ['1.25rem',  { lineHeight: '1.3' }],
+        'heading-2-md': ['1.375rem', { lineHeight: '1.3' }],
+        'heading-2-lg': ['1.5rem',   { lineHeight: '1.25' }],
+ 
+        // H4 · Titoli secondari — 18px → 20px
+        'heading-3':    ['1.125rem', { lineHeight: '1.4' }],
+        'heading-3-lg': ['1.25rem',  { lineHeight: '1.3' }],
+ 
+        // Occhiello / intro — 18px → 20px
+        'subtitle':    ['1.125rem', { lineHeight: '1.5' }],
+        'subtitle-lg': ['1.25rem',  { lineHeight: '1.5' }],
+ 
+        // Testo corrente — 16px fisso (già ottimale su tutti i dispositivi)
+        'body': ['1rem', { lineHeight: '1.7' }],
+ 
+        // Nav, bottoni, etichette — 14px → 16px
+        'label':    ['0.875rem', { lineHeight: '1.4', letterSpacing: '0.04em' }],
+        'label-md': ['1rem',     { lineHeight: '1.4', letterSpacing: '0.04em' }],
+ 
+        // Note, footer, disclaimer — 13px fisso
+        'caption': ['0.8125rem', { lineHeight: '1.5' }],
+      },
     },
   },
   plugins: [

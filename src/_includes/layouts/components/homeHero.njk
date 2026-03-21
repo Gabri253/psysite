@@ -1,0 +1,55 @@
+<section id="homeHero" class="w-full bg-brand-beige pb-16">
+  <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] min-h-[90vh]">
+
+    {# Testo — colonna sinistra #}
+    <div class="flex flex-col justify-center px-8 py-16 md:px-14 lg:px-16 xl:px-20 gap-6">
+
+      <span class="text-xs tracking-[0.12em] uppercase text-brand-sage font-sans">
+        Psicologa · Lucca
+      </span>
+
+      <div class="w-8 h-px bg-brand-sage opacity-60"></div>
+
+      <h1 class="font-serif text-display md:text-display-md lg:text-display-lg font-normal text-brand-forest">
+        Uno spazio sicuro<br>
+        per <em class="italic text-brand-sage not-italic" style="font-style: italic;">ritrovare</em><br>
+        il tuo equilibrio.
+      </h1>
+
+      <p class="font-sans text-base leading-relaxed text-brand-forest/70 max-w-md">
+        Percorsi di psicoterapia individuale e supporto alla genitorialità.
+        In studio a Lucca e online.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-5 pt-2">
+        <a
+          href="/contatti/"
+          class="inline-block bg-brand-forest text-brand-beige font-sans text-sm px-6 py-3 rounded-full transition-colors duration-300 hover:bg-brand-sage"
+        >
+          Prenota un appuntamento
+        </a>
+        <a
+          href="/servizi/"
+          class="font-sans text-sm text-brand-sage border-b border-brand-sage/50 pb-px transition-colors duration-300 hover:text-brand-forest hover:border-brand-forest/50"
+        >
+          Scopri i servizi
+        </a>
+      </div>
+
+    </div>
+
+    {# Foto — colonna destra, taglia fino al bordo #}
+    <div class="relative overflow-hidden min-h-[360px] lg:min-h-0">
+      <img
+        src="/assets/img/studio-template.webp"
+        alt="Studio della dottoressa Sara Martini a Lucca"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+        fetchpriority="high"
+        decoding="async"
+      >
+      {# Sfumatura sx per raccordare col testo su schermi grandi #}
+      <div class="hidden lg:block absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-brand-beige to-transparent"></div>
+    </div>
+
+  </div>
+</section>

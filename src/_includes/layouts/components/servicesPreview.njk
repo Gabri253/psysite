@@ -1,10 +1,26 @@
-<section class="max-w-6xl py-20 mx-auto px-4 sm:px-6" id="services-preview">
-  <h2 class="text-heading-1 md:text-heading-1-md lg:text-heading-1-lg font-serif font-bold text-brand-forest/85 tracking-[0.05em] text-center mb-12">
-    I miei servizi
-  </h2>
-  <div class="flex flex-wrap gap-y-8 -mx-4">
-    {% for card in cards %}
-      {% include "layouts/components/servicesCard.njk" %}
-    {% endfor %}
+<section class="w-full pt-0 pb-20 bg-brand-beige-dark" id="services-preview">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <h2 class="text-heading-1 md:text-heading-1-md lg:text-heading-1-lg font-serif font-normal text-brand-forest/85 tracking-[0.05em] text-center mb-12 pt-20">
+      I miei servizi
+    </h2>
+    <div class="flex flex-wrap gap-y-8 -mx-4">
+      {% for card in cards %}
+        {% include "layouts/components/servicesCard.njk" %}
+      {% endfor %}
+    </div>
   </div>
 </section>
+{#
+<section class="w-full py-20 bg-brand-beige-dark" id="services-preview">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <h2 class="text-heading-1 md:text-heading-1-md lg:text-heading-1-lg font-serif font-normal text-brand-forest/85 tracking-[0.05em] text-center mb-12">
+      I miei servizi
+    </h2>
+    <div class="flex flex-wrap -mx-4">
+      {% for card in cards %}
+        {% include "layouts/components/servicesCard.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+#}

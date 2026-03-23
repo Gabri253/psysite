@@ -1,22 +1,32 @@
-<section id="homeHero" class="w-full bg-brand-beige pb-16">
-  <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] min-h-[90vh]">
+<section id="homeHero" class="w-full bg-brand-beige">
+  <div class="grid grid-cols-1 lg:grid-cols-[4fr_4fr] min-h-[75vh]">
 
     {# Testo — colonna sinistra #}
-    <div class="flex flex-col justify-center px-8 py-16 md:px-14 lg:px-16 xl:px-20 gap-6">
+    <div class="relative flex flex-col justify-center px-8 py-16 md:px-14 lg:px-16 xl:px-20 gap-6 overflow-hidden">
 
-      <span class="text-xs tracking-[0.12em] uppercase text-brand-sage font-sans">
+      {# SVG linee curve organiche — coprono tutta l'altezza della colonna #}
+      <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        {# Curva principale — attraversa la colonna in diagonale morbida #}
+        <path d="M 480 -20 C 420 150, 520 300, 440 480 C 360 660, 480 750, 400 920" fill="none" stroke="#5B7B5F" stroke-width="1.8" opacity="0.28"/>
+        {# Curva secondaria — parallela ma sfasata #}
+        <path d="M 540 -20 C 480 180, 580 340, 500 520 C 420 700, 540 800, 460 940" fill="none" stroke="#5B7B5F" stroke-width="1" opacity="0.18"/>
+        {# Curva terza — più a sinistra, più corta #}
+        <path d="M 350 -20 C 300 120, 400 260, 320 420 C 240 580, 360 680, 280 860" fill="none" stroke="#5B7B5F" stroke-width="0.7" opacity="0.12"/>
+      </svg>
+
+      <span class="text-body xl:text-body-xl tracking-[0.12em] uppercase text-brand-sage font-sans">
         Psicologa · Lucca
       </span>
 
-      <div class="w-8 h-px bg-brand-sage opacity-60"></div>
+      <div class="w-48 h-px bg-brand-sage opacity-60"></div>
 
-      <h1 class="font-serif text-display md:text-display-md lg:text-display-lg font-normal text-brand-forest">
+      <h1 class="font-serif text-display md:text-display-md lg:text-display-lg xl:text-display-xl font-normal text-brand-forest">
         Uno spazio sicuro<br>
-        per <em class="italic text-brand-sage not-italic" style="font-style: italic;">ritrovare</em><br>
+        per <em class="italic text-brand-sage">ritrovare</em><br>
         il tuo equilibrio.
       </h1>
 
-      <p class="font-sans text-base leading-relaxed text-brand-forest/70 max-w-md">
+      <p class="font-sans text-body xl:text-body-xl leading-relaxed text-brand-forest/70 max-w-md">
         Percorsi di psicoterapia individuale e supporto alla genitorialità.
         In studio a Lucca e online.
       </p>
@@ -24,13 +34,13 @@
       <div class="flex flex-wrap items-center gap-5 pt-2">
         <a
           href="/contatti/"
-          class="inline-block bg-brand-forest text-brand-beige font-sans text-sm px-6 py-3 rounded-full transition-colors duration-300 hover:bg-brand-sage"
+          class="inline-block bg-brand-forest text-brand-beige font-sans text-label md:text-label-md px-6 py-3 rounded-full transition-colors duration-300 hover:bg-brand-sage"
         >
           Prenota un appuntamento
         </a>
         <a
           href="/servizi/"
-          class="font-sans text-sm text-brand-sage border-b border-brand-sage/50 pb-px transition-colors duration-300 hover:text-brand-forest hover:border-brand-forest/50"
+          class="font-sans text-label md:text-label-md  text-brand-sage border-b border-brand-sage/50 pb-px transition-colors duration-300 hover:text-brand-forest hover:border-brand-forest/50"
         >
           Scopri i servizi
         </a>

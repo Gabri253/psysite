@@ -1,6 +1,6 @@
-<section class="w-full pt-0 pb-20 bg-brand-beige-dark" id="services-preview">
+{#<section class="w-full py-16 md:py-20 lg:py-24 bg-brand-beige" id="services-preview">
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
-    <h2 class="text-heading-1 md:text-heading-1-md lg:text-heading-1-lg font-serif font-normal text-brand-forest/85 tracking-[0.05em] text-center mb-12 pt-20">
+    <h2 class="text-heading-1 md:text-heading-1-md lg:text-heading-1-lg font-serif font-normal text-brand-forest/85 tracking-[0.05em] text-center mb-12">
       I miei servizi
     </h2>
     <div class="flex flex-wrap gap-y-8 -mx-4">
@@ -10,17 +10,26 @@
     </div>
   </div>
 </section>
-{#
-<section class="w-full py-20 bg-brand-beige-dark" id="services-preview">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6">
-    <h2 class="text-heading-1 md:text-heading-1-md lg:text-heading-1-lg font-serif font-normal text-brand-forest/85 tracking-[0.05em] text-center mb-12">
-      I miei servizi
-    </h2>
+#}
+<section class="w-full py-24 bg-brand-beige" id="services-preview">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8">
+
+    {# Intestazione sezione #}
+    <div class="text-center mb-14">
+      <span class="font-sans text-label md:text-label-md text-brand-sage tracking-[0.12em] uppercase">
+        Cosa offro
+      </span>
+      <div class="w-48 h-px bg-brand-sage/40 mx-auto my-4"></div>
+      <h2 class="text-heading-1 md:text-heading-1-md lg:text-heading-1-lg xl:text-heading-1-xl font-serif font-normal text-brand-forest/85">
+        I miei servizi
+      </h2>
+    </div>
+
     <div class="flex flex-wrap -mx-4">
       {% for card in cards %}
         {% include "layouts/components/servicesCard.njk" %}
       {% endfor %}
     </div>
+
   </div>
 </section>
-#}

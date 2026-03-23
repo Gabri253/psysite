@@ -36,37 +36,43 @@ module.exports = {
       },
 
       fontSize: {
-        // H1 · Hero — 48px → 56px → 64px
+        // H1 · Hero — 48px → 56px → 64px → 72px
         'display':    ['3rem',   { lineHeight: '1.1', letterSpacing: '-0.02em' }],
         'display-md': ['3.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
         'display-lg': ['4rem',   { lineHeight: '1.1', letterSpacing: '-0.02em' }],
- 
-        // H2 · Titoli sezione — 28px → 32px → 40px
+        'display-xl': ['4.5rem', { lineHeight: '1.05', letterSpacing: '-0.03em' }],
+
+        // H2 · Titoli sezione — 28px → 32px → 40px → 48px
         'heading-1':    ['1.75rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
         'heading-1-md': ['2rem',    { lineHeight: '1.2', letterSpacing: '-0.01em' }],
         'heading-1-lg': ['2.5rem',  { lineHeight: '1.2', letterSpacing: '-0.01em' }],
- 
-        // H3 · Titoli card — 20px → 22px → 24px
+        'heading-1-xl': ['3rem',    { lineHeight: '1.15', letterSpacing: '-0.02em' }],
+
+        // H3 · Titoli card — 20px → 22px → 24px → 28px
         'heading-2':    ['1.25rem',  { lineHeight: '1.3' }],
         'heading-2-md': ['1.375rem', { lineHeight: '1.3' }],
         'heading-2-lg': ['1.5rem',   { lineHeight: '1.25' }],
- 
-        // H4 · Titoli secondari — 18px → 20px
+        'heading-2-xl': ['1.75rem',  { lineHeight: '1.25' }],
+
+        // H4 · Titoli secondari — 18px → 20px → 22px
         'heading-3':    ['1.125rem', { lineHeight: '1.4' }],
         'heading-3-lg': ['1.25rem',  { lineHeight: '1.3' }],
- 
-        // Occhiello / intro — 18px → 20px
+        'heading-3-xl': ['1.375rem', { lineHeight: '1.3' }],
+
+        // Occhiello / intro — 18px → 20px → 22px
         'subtitle':    ['1.125rem', { lineHeight: '1.5' }],
         'subtitle-lg': ['1.25rem',  { lineHeight: '1.5' }],
- 
-        // Testo corrente — 16px fisso (già ottimale su tutti i dispositivi)
-        'body': ['1rem', { lineHeight: '1.7' }],
- 
-        // Nav, bottoni, etichette — 14px → 16px
+        'subtitle-xl': ['1.375rem', { lineHeight: '1.5' }],
+
+        // Testo corrente — 16px → 17px su schermi grandi
+        'body':    ['1rem',      { lineHeight: '1.7' }],
+        'body-xl': ['1.0625rem', { lineHeight: '1.75' }],
+
+        // Nav, bottoni, etichette — 14px → 16px (invariato)
         'label':    ['0.875rem', { lineHeight: '1.4', letterSpacing: '0.04em' }],
         'label-md': ['1rem',     { lineHeight: '1.4', letterSpacing: '0.04em' }],
- 
-        // Note, footer, disclaimer — 13px fisso
+
+        // Note, footer, disclaimer — 13px (invariato)
         'caption': ['0.8125rem', { lineHeight: '1.5' }],
       },
     },

@@ -1,5 +1,6 @@
-<section id="homeBio" class="py-12 px-6 max-w-4xl mx-auto bg-[#F2EFE9] rounded-lg">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">   
+
+<section id="homeBio" class="w-full py-8 bg-brand-beige-dark">
+  <div class="py-12 px-6 max-w-4xl mx-auto rounded-lg grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-12 items-center bg-brand-beige border border-brand-sage/15 shadow-[0_8px_40px_rgba(30,57,42,0.07)]">   
     <div class="overflow-hidden rounded-2xl shadow-xl">
       <img 
         src="/assets/img/SaraMartini.webp" 
@@ -8,22 +9,95 @@
       >
     </div>
     <div class="space-y-6" style="transition-delay: 200ms;">
-      <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-[0.025em] text-brand-forest/85">
+      <h2 class="text-heading-1 md:text-heading-1-md lg:text-heading-1-lg xl:text-heading-1-xl font-serif font-medium tracking-[0.025em] text-brand-forest/85">
         Mi presento, sono Sara
       </h2> 
-      <p class="text-lg text-brand-forest leading-relaxed">
+      <p class="text-body xl:text-body-xl text-brand-forest leading-relaxed">
         Sono un'amante degli animali e dei viaggi, nata e cresciuta nel mondo della natura e dello sport.
         Mi descriverei come una persona gioiosa, laboriosa e motivata.
-        Credo profondamente nel potere delle relazioni umane e nella ricchezza della cultura. Il mio approccio si basa sull'ascolto empatico e sulla creazione di uno spazio sicuro dove esplorare le proprie difficoltà. Insieme, lavoreremo per ritrovare il tuo equilibrio psicologico.
+        Credo profondamente nel potere delle relazioni umane e nella ricchezza della cultura. <br>
+        Il mio approccio si basa sull'ascolto empatico e sulla creazione di uno spazio sicuro dove esplorare le proprie difficoltà. Insieme, lavoreremo per ritrovare il tuo equilibrio psicologico.
       </p>
-      <p class="text-lg text-brand-forest leading-relaxed">
+      <p class="text-body xl:text-body-xl text-brand-forest leading-relaxed">
         Specializzata in psicoterapia cognitiva, aiuto adulti e adolescenti a gestire ansia, stress e momenti di crisi personale.
       </p>
       <div class="pt-4">
-        <a href="/chi-sono/" class="inline-block border-2 border-brand-forest text-brand-forest hover:bg-brand-forest hover:text-white px-8 py-3 rounded-full font-semibold transition-all">
+        <a href="/chi-sono/" class="text-label md:text-label-md inline-block border-2 border-brand-forest text-brand-forest hover:bg-brand-forest hover:text-white px-8 py-3 rounded-full font-semibold transition-all">
           Scopri di più su di me
         </a>
       </div>
     </div>
   </div>
 </section>
+
+<!--
+<section id="homeBio" class="w-full bg-brand-beige-dark">
+  <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[75vh]">
+
+    {# Foto — colonna sinistra, a filo come nella hero #}
+    <div class="relative overflow-hidden min-h-[360px] lg:min-h-0 order-1 lg:order-none">
+      <img
+        src="/assets/img/SaraMartini.webp"
+        alt="Dottoressa Sara Martini sorridente nel suo studio a Lucca"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+        loading="lazy"
+        decoding="async"
+      >
+      {# Sfumatura dx per raccordare col testo su schermi grandi #}
+      <div class="hidden lg:block absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-brand-beige-dark to-transparent"></div>
+    </div>
+
+    {# Testo — colonna destra #}
+    <div class="relative flex flex-col justify-center px-8 py-16 md:px-14 lg:px-16 xl:px-20 gap-6 overflow-hidden order-2 lg:order-none">
+
+      {# SVG linee curve — speculari rispetto alla hero #}
+      <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        {# Curva principale #}
+        <path d="M 120 -20 C 180 150, 80 300, 160 480 C 240 660, 120 750, 200 920" fill="none" stroke="#5B7B5F" stroke-width="1.8" opacity="0.28"/>
+        {# Curva secondaria #}
+        <path d="M 60 -20 C 120 180, 20 340, 100 520 C 180 700, 60 800, 140 940" fill="none" stroke="#5B7B5F" stroke-width="1" opacity="0.18"/>
+        {# Curva terza #}
+        <path d="M 250 -20 C 300 120, 200 260, 280 420 C 360 580, 240 680, 320 860" fill="none" stroke="#5B7B5F" stroke-width="0.7" opacity="0.12"/>
+      </svg>
+
+      <span class="text-body xl:text-body-xl tracking-[0.12em] uppercase text-brand-sage font-sans">
+        Chi sono
+      </span>
+
+      <div class="w-48 h-px bg-brand-sage opacity-60"></div>
+
+      <h2 class="font-serif text-heading-1 md:text-heading-1-md lg:text-heading-1-lg xl:text-heading-1-xl font-medium text-brand-forest">
+        Mi presento,<br>
+        sono <em class="italic text-brand-sage">Sara</em>
+      </h2>
+
+      <p class="font-sans text-body xl:text-body-xl leading-relaxed text-brand-forest/70 max-w-md">
+        Sono un'amante degli animali e dei viaggi, nata e cresciuta nel mondo della natura e dello sport.
+        Mi descriverei come una persona gioiosa, laboriosa e motivata.
+      </p>
+
+      <p class="font-sans text-body xl:text-body-xl leading-relaxed text-brand-forest/70 max-w-md">
+        Credo profondamente nel potere delle relazioni umane. Il mio approccio si basa sull'ascolto empatico
+        e sulla creazione di uno spazio sicuro dove esplorare le proprie difficoltà.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-5 pt-2">
+        <a
+          href="/chi-sono/"
+          class="inline-block bg-brand-forest text-brand-beige font-sans text-label md:text-label-md px-6 py-3 rounded-full transition-colors duration-300 hover:bg-brand-sage"
+        >
+          Scopri di più su di me
+        </a>
+        <a
+          href="/contatti/"
+          class="font-sans text-label md:text-label-md text-brand-sage border-b border-brand-sage/50 pb-px transition-colors duration-300 hover:text-brand-forest hover:border-brand-forest/50"
+        >
+          Prenota un appuntamento
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+-->

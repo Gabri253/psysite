@@ -1,9 +1,9 @@
 <section id="homeBlog" class="py-12 px-6 max-w-6xl mx-auto">
    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-10 text-brand-forest">Ultime riflessioni</h2>
-   <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+   <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
       {% for post in sanityPosts | limit(3) %}  
          {% if loop.first %} 
-            <div class="lg:col-span-2 flex flex-col">
+            <div class="lg:col-span-3 flex flex-col">
                <article class="group">
                   <div class="overflow-hidden rounded-2xl mb-4">
                      <a class="block overflow-hidden rounded-xl" href="/blog/{{ post.slug }}">
@@ -15,30 +15,30 @@
                      </a>
                   </div>
                   <div>
-                     <span class="text-xs font-bold text-brand-sage uppercase">Articolo in evidenza</span>
-                     <h3><a href="/blog/{{ post.slug }}" class="font-bold leading-tight group-hover:text-brand-sage">{{ post.title }}</a></h3>
-                     <p class="text-gray-600 mt-3">Un estratto più lungo che spiega di cosa parli in questo post, invitando alla lettura profonda...</p>
+                     <span class="text-label md:text-label-md font-bold text-brand-sage uppercase">Articolo in evidenza</span>
+                     <h3><a href="/blog/{{ post.slug }}" class="text-brand-forest/85 heading-2 md:text-heading-2-md lg:text-heading-2-lg xl:text-heading-2-xl font-medium group-hover:text-brand-sage">{{ post.title }}</a></h3>
+                     <p class="text-body xl:text-body-xl text-gray-600 mt-3">Un estratto più lungo che spiega di cosa parli in questo post, invitando alla lettura profonda...</p>
                   </div>
             </article>
             </div>
-            <div class="flex flex-col gap-8">
+            <div class="flex lg:col-span-2 flex-col gap-8">
          {% else %}     
                <article class="flex gap-4 items-start group">
                   <a class="block overflow-hidden rounded-xl" href="/blog/{{ post.slug }}">
                   {% if post.image and post.image.asset %}
-                     <img src="{{ post.image |formatSanity(1200,80) }}" alt="post.image.alt" loading="lazy" class="w-24 h-24 rounded-xl object-cover shrink-0">
+                     <img src="{{ post.image |formatSanity(1200,80) }}" alt="post.image.alt" loading="lazy" class="w-full h-48 rounded-xl object-cover shrink-0">
                   {% else %}
-                     <img src="/assets/img/template-articolo.webp" alt="Donna che legge un libro" loading="lazy" class="w-24 h-24 rounded-xl object-cover shrink-0">
+                     <img src="/assets/img/template-articolo.webp" alt="Donna che legge un libro" loading="lazy" class="w-full h-48 rounded-xl object-cover shrink-0">
                   {% endif %}
                   </a>
                   <div>
-                     <h4><a href="/blog/{{ post.slug }}" class="font-bold leading-tight group-hover:text-brand-sage">{{ post.title }}</a></h4>
-                     <p class="text-sm text-gray-500 line-clamp-2 mt-1">Breve accenno al tema trattato.</p>
+                     <h3><a href="/blog/{{ post.slug }}" class="text-brand-forest/85 heading-2 md:text-heading-2-md lg:text-heading-2-lg xl:text-heading-2-xl font-medium group-hover:text-brand-sage">{{ post.title }}</a></h4>
+                     <p class="text-body xl:text-body-xl text-gray-500 line-clamp-2 mt-1">Breve accenno al tema trattato.</p>
                   </div>
                </article>
          {% endif %}
       {% endfor %}
-               <a href="/blog/" class="mt-4 text-sm font-bold border-b border-brand-sage pb-1 self-start hover:text-brand-sage">Esplora tutto il blog →</a>
+               <a href="/blog/" class="mt-4 text-body xl:text-body-xl font-bold border-b border-brand-sage pb-1 self-start hover:text-brand-sage">Esplora tutto il blog →</a>
             </div>
    </div>
 </section>

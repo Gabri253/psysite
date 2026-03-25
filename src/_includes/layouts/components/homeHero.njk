@@ -1,8 +1,8 @@
-<section id="homeHero" class="w-full bg-brand-beige">
+<section id="homeHero" class="w-full bg-brand-beige realtive overflow-hidden">
   <div class="grid grid-cols-1 lg:grid-cols-[4fr_4fr] min-h-[75vh]">
 
     {# Testo — colonna sinistra #}
-    <div class="relative flex flex-col justify-center px-8 py-16 md:px-14 lg:px-16 xl:px-20 gap-6 overflow-hidden">
+    <div class="relative flex flex-col justify-center px-8 py-10 md:py-16 md:px-14 lg:px-16 xl:px-20 gap-6 overflow-hidden">
 
       {# SVG linee curve organiche — coprono tutta l'altezza della colonna #}
       <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -61,5 +61,11 @@
       <div class="hidden lg:block absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-brand-beige to-transparent"></div>
     </div>
 
+  </div>
+
+  <div class="-mb-1 left-0 w-full overflow-hidden leading-none">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C240,70 480,70 720,30 C960,0 1200,70 1440,0 L1440,80 L0,80 Z" fill="#F2F0E4"/>
+    </svg>
   </div>
 </section>

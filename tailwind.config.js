@@ -59,20 +59,19 @@ module.exports = {
         'heading-3-lg': ['1.25rem',  { lineHeight: '1.3' }],
         'heading-3-xl': ['1.375rem', { lineHeight: '1.3' }],
 
-        // Occhiello / intro — 18px → 20px → 22px
-        'subtitle':    ['1.125rem', { lineHeight: '1.5' }],
-        'subtitle-lg': ['1.25rem',  { lineHeight: '1.5' }],
-        'subtitle-xl': ['1.375rem', { lineHeight: '1.5' }],
-
         // Testo corrente — 16px → 17px su schermi grandi
         'body':    ['1rem',      { lineHeight: '1.7' }],
         'body-xl': ['1.0625rem', { lineHeight: '1.75' }],
 
-        // Nav, bottoni, etichette — 14px → 16px (invariato)
+        // Nav / Header links — 18px → 20px
+        'nav':    ['1.125rem', { lineHeight: '1.4', letterSpacing: '0.04em' }],
+        'nav-md': ['1.25rem',  { lineHeight: '1.4', letterSpacing: '0.04em' }],
+
+        // Bottoni, etichette — 14px → 16px
         'label':    ['0.875rem', { lineHeight: '1.4', letterSpacing: '0.04em' }],
         'label-md': ['1rem',     { lineHeight: '1.4', letterSpacing: '0.04em' }],
 
-        // Note, footer, disclaimer — 13px (invariato)
+        // Note, footer, disclaimer — 13px
         'caption': ['0.8125rem', { lineHeight: '1.5' }],
       },
     },
